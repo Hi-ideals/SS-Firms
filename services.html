@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services – SS Firms</title>
+  <meta name="description" content="SS Firms offers comprehensive IT consulting services including Engineering, AI, Cloud, SAP, IoT, Energy & Utilities, and IT Staffing." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+</head>
+<body class="page-body">
+
+<script src="content.js"></script>
+<script src="components.js"></script>
+
+<!-- ============================================================
+     PAGE BANNER
+     ============================================================ -->
+<section class="bg-white border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+    <div class="w-full md:w-1/2 pt-12 pb-6 md:py-24 text-left">
+      <span class="text-xs uppercase tracking-widest text-[#e0194e] font-extrabold block mb-3">SS Firms</span>
+      <h1 class="text-5xl md:text-6xl font-extrabold text-[#1a0463] font-serif leading-tight">Our Services</h1>
+    </div>
+    <div class="w-full md:w-1/2 flex justify-center md:justify-end pb-8 md:pb-0">
+      <img src="images/banner-right.png" alt="Services Illustration" class="w-full max-w-[400px] md:w-auto h-auto md:h-[450px] object-contain" />
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICES GRID
+     ============================================================ -->
+<section class="section" style="background:#fff;padding-top:60px;padding-bottom:60px;">
+  <div class="container" style="padding:0;">
+    <div class="services-grid" id="services-grid">
+      <!-- Injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROMO SECTION
+     ============================================================ -->
+
+
+<script>
+// Services Grid
+(function(){
+  const grid = document.getElementById('services-grid');
+  const icons = {
+    engineering: 'fa-laptop-code',
+    ai: 'fa-brain',
+    cloud: 'fa-cloud',
+    sap: 'fa-cogs',
+    iot: 'fa-microchip',
+    energy: 'fa-bolt',
+    staffing: 'fa-users'
+  };
+  SITE.services.items.forEach((s, i) => {
+    const div = document.createElement('div');
+    div.className = 'service-item fade-up delay-' + Math.min(i+1, 5);
+    div.onclick = () => location.href = s.href;
+    div.innerHTML = `
+      <div class="service-icon-placeholder">
+        <i class="fas ${icons[s.id] || 'fa-star'}"></i>
+      </div>
+      <div class="service-item-info">
+        <div class="service-item-title">${s.label}</div>
+        <span class="service-item-link">Read more</span>
+      </div>`;
+    grid.appendChild(div);
+  });
+})();
+
+// Promo
+(function(){
+  document.getElementById('promo-left-text').textContent = SITE.services.promo.leftText;
+  document.getElementById('promo-right-label').textContent = SITE.services.promo.rightLabel;
+})();
+</script>
+</body>
+</html>

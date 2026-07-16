@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Careers – SS Firms</title>
+  <meta name="description" content="Join SS Firms – explore exciting career opportunities in IT consulting, engineering, AI, cloud, and more." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+</head>
+<body class="page-body">
+<script src="content.js"></script>
+<script src="components.js"></script>
+
+<!-- Banner -->
+<section class="bg-white border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+    <div class="w-full md:w-1/2 pt-12 pb-6 md:py-24 text-left">
+      <span class="text-xs uppercase tracking-widest text-[#e0194e] font-extrabold block mb-3">SS Firms</span>
+      <h1 class="text-5xl md:text-6xl font-extrabold text-[#1a0463] font-serif leading-tight">Careers</h1>
+    </div>
+    <div class="w-full md:w-1/2 flex justify-center md:justify-end pb-8 md:pb-0">
+      <img src="images/banner-right.png" alt="Careers Illustration" class="w-full max-w-[400px] md:w-auto h-auto md:h-[450px] object-contain" />
+    </div>
+  </div>
+</section>
+
+<!-- Content -->
+<section class="section" style="background:#fff;">
+  <div class="container">
+    <div style="max-width:800px;margin:0 auto;text-align:center;">
+      <h2 class="section-title fade-up" id="careers-heading" style="margin-bottom:16px;"></h2>
+      <div class="section-divider section-divider-center fade-up delay-1"></div>
+      <p class="section-body fade-up delay-2" id="careers-body" style="margin:0 auto 50px;"></p>
+    </div>
+
+    <!-- Why work with us -->
+    <div class="grid grid-cols-3 gap-2 md:gap-6 mt-10 fade-up delay-3">
+      <div class="p-3 md:p-8 bg-[#f0f2f8] rounded-[16px] text-center flex flex-col justify-between h-full">
+        <div class="w-10 h-10 md:w-16 md:h-16 bg-[#e0d7ff] rounded-full flex items-center justify-center mx-auto mb-4 text-lg md:text-2xl text-[#3b0da8]">
+          <i class="fas fa-rocket"></i>
+        </div>
+        <h3 class="text-xs md:text-base font-bold text-[#3b0da8] mb-2 font-serif">Growth Opportunities</h3>
+        <p class="text-[9px] sm:text-xs md:text-sm text-gray-600 leading-relaxed font-serif">We invest in your professional development with training, certifications, and career advancement opportunities.</p>
+      </div>
+      <div class="p-3 md:p-8 bg-[#f0f2f8] rounded-[16px] text-center flex flex-col justify-between h-full">
+        <div class="w-10 h-10 md:w-16 md:h-16 bg-[#d7f3ff] rounded-full flex items-center justify-center mx-auto mb-4 text-lg md:text-2xl text-[#0369a1]">
+          <i class="fas fa-users"></i>
+        </div>
+        <h3 class="text-xs md:text-base font-bold text-[#3b0da8] mb-2 font-serif">Collaborative Culture</h3>
+        <p class="text-[9px] sm:text-xs md:text-sm text-gray-600 leading-relaxed font-serif">Work alongside talented professionals in a collaborative, inclusive, and supportive environment.</p>
+      </div>
+      <div class="p-3 md:p-8 bg-[#f0f2f8] rounded-[16px] text-center flex flex-col justify-between h-full">
+        <div class="w-10 h-10 md:w-16 md:h-16 bg-[#d7ffe8] rounded-full flex items-center justify-center mx-auto mb-4 text-lg md:text-2xl text-[#047857]">
+          <i class="fas fa-globe"></i>
+        </div>
+        <h3 class="text-xs md:text-base font-bold text-[#3b0da8] mb-2 font-serif">Global Impact</h3>
+        <p class="text-[9px] sm:text-xs md:text-sm text-gray-600 leading-relaxed font-serif">Make a real difference by working on projects that transform businesses across industries worldwide.</p>
+      </div>
+    </div>
+
+    <!-- Openings notice -->
+    <div style="margin-top:60px;text-align:center;padding:50px;background:#f0f2f8;border-radius:20px;" class="fade-up">
+      <i class="fas fa-briefcase" style="font-size:48px;color:#c4b5fd;margin-bottom:20px;display:block;"></i>
+      <h3 style="font-size:20px;font-weight:700;color:#3b0da8;margin-bottom:12px;">Current Openings</h3>
+      <p style="font-size:14px;color:#777;margin-bottom:24px;">We are always on the lookout for passionate and talented individuals. Send us your resume and we'll reach out when a suitable role opens up.</p>
+      <a href="contact-us.html" class="btn-primary">Get In Touch</a>
+    </div>
+  </div>
+</section>
+
+<!-- Ready Banner -->
+<section class="ready-banner">
+  <div class="container ready-inner">
+    <div>
+      <h2 class="ready-heading">Ready to join our team?</h2>
+      <p class="ready-sub">We'd love to hear from you!</p>
+    </div>
+    <a class="btn-outline-white" href="contact-us.html">Contact Us</a>
+  </div>
+</section>
+
+<script>
+(function(){
+  document.getElementById('careers-heading').textContent = SITE.careers.heading;
+  document.getElementById('careers-body').textContent = SITE.careers.body;
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SS Firms – Empowering Businesses with Innovative IT Solutions</title>
+  <meta name="description" content="SS Firms provides expert IT consulting, engineering, AI, cloud, SAP, IoT, and staffing services to empower businesses through automation and innovation." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+</head>
+<body class="page-body">
+
+<script src="content.js"></script>
+<script src="components.js"></script>
+
+<!-- ============================================================
+     HERO SLIDER
+     ============================================================ -->
+<section class="hero-slider" id="hero-slider">
+  <!-- Slides injected by JS -->
+</section>
+
+<!-- ============================================================
+     ABOUT US SECTION
+     ============================================================ -->
+<section class="section about-section" id="about-home">
+  <div class="container">
+    <span class="section-label">ABOUT US</span>
+    <div class="about-text-col max-w-4xl">
+      <h2 class="section-title slide-left" id="about-heading"></h2>
+      <div class="section-divider"></div>
+      <p class="section-body slide-left delay-1 !max-w-none" id="about-body" style="font-size:16px;color:#444;line-height:1.8;"></p>
+      <a class="btn-primary slide-left delay-2" id="about-btn" href="#" style="margin-top:28px;display:inline-block;">READ MORE</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICES DARK SECTION
+     ============================================================ -->
+<section class="services-dark" id="services-home" style="background-image:url('')">
+  <div class="services-dark-content container">
+    <span class="section-label" style="color:rgba(255,255,255,0.7);letter-spacing:3px;font-size:13px;" id="services-label"></span>
+    <h2 class="section-title section-title-white fade-up" style="font-size:clamp(2rem,4vw,3.2rem);" id="services-heading"></h2>
+    <div class="services-dark-divider fade-up delay-1"></div>
+    <a class="btn-primary fade-up delay-2" id="services-btn" href="#">READ MORE</a>
+  </div>
+</section>
+
+<!-- ============================================================
+     INDUSTRIES SECTION
+     ============================================================ -->
+<section class="section industries-section" id="industries-home">
+  <div class="container">
+    <h2 class="section-title fade-up" style="text-align:center;" id="industries-heading"></h2>
+    <div class="section-divider section-divider-center fade-up delay-1"></div>
+  </div>
+  <div class="container" style="position:relative;padding-top:20px;">
+    <div class="industries-slider-wrap" id="ind-slider-wrap">
+      <div class="industries-track" id="ind-track">
+        <!-- Industry cards injected by JS -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHY CHOOSE US
+     ============================================================ -->
+<section class="section why-section" id="why-home">
+  <div class="container">
+    <div class="why-grid">
+      <div>
+        <h2 class="section-title slide-left" id="why-heading"></h2>
+        <div class="section-divider slide-left delay-1"></div>
+        <p class="section-body slide-left delay-2" id="why-body"></p>
+        <div class="why-features" id="why-features">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+      <div class="why-img-col slide-right">
+        <img id="why-img" src="" alt="Why Choose SS Firms" style="min-height:350px;background:#e0e4f0;border-radius:12px;" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CTA SECTION
+     ============================================================ -->
+<section class="cta-section" id="cta-home" style="background-image:url('')">
+  <div class="container cta-content">
+    <h2 class="cta-title fade-up" id="cta-heading"></h2>
+    <div class="cta-form fade-up delay-1">
+      <input class="cta-input" id="cta-email" type="email" placeholder="Email" aria-label="Email" />
+      <button class="cta-btn" id="cta-btn" onclick="handleCtaSubmit()"></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PARTNERS SECTION
+     ============================================================ -->
+<section class="section partners-section" id="partners-home">
+  <div class="container">
+    <h2 class="section-title fade-up" id="partners-heading"></h2>
+    <div class="section-divider section-divider-center fade-up delay-1"></div>
+    <div class="partners-grid fade-up delay-2" id="partners-grid">
+      <!-- Injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT SECTION
+     ============================================================ -->
+<section class="contact-section" id="contact-home">
+  <div class="container">
+    <div class="contact-grid">
+      <!-- Left: Form -->
+      <div class="slide-left">
+        <h2 class="contact-heading" id="contact-heading"></h2>
+        <p class="contact-body" id="contact-body"></p>
+        <form class="contact-form" onsubmit="handleContactSubmit(event)">
+          <div class="form-row">
+            <input class="form-input" type="text" placeholder="Name" id="cf-name" required />
+            <input class="form-input" type="tel" placeholder="Phone Number" id="cf-phone" />
+          </div>
+          <input class="form-input" type="email" placeholder="Email" id="cf-email" required />
+          <textarea class="form-textarea" placeholder="Message" id="cf-msg" rows="5"></textarea>
+          <button type="submit" class="form-submit">Submit</button>
+        </form>
+      </div>
+      <!-- Right: Address Cards -->
+      <div class="address-cards slide-right">
+        <div class="address-card">
+          <h3 class="address-card-label" id="addr-usa-label"></h3>
+          <div class="address-detail"><i class="fas fa-map-marker-alt"></i><span id="addr-usa-street"></span></div>
+          <div class="address-detail"><i class="fas fa-phone-alt"></i><span id="addr-usa-phone"></span></div>
+          <div class="address-detail"><i class="fas fa-envelope"></i><span id="addr-usa-email"></span></div>
+          <div class="address-detail"><i class="far fa-clock"></i><span id="addr-usa-hours"></span></div>
+        </div>
+        <div class="address-card">
+          <h3 class="address-card-label" id="addr-india-label"></h3>
+          <div class="address-detail"><i class="fas fa-map-marker-alt"></i><span id="addr-india-street"></span></div>
+          <div class="address-detail"><i class="fas fa-phone-alt"></i><span id="addr-india-phone"></span></div>
+          <div class="address-detail"><i class="fas fa-envelope"></i><span id="addr-india-email"></span></div>
+          <div class="address-detail"><i class="far fa-clock"></i><span id="addr-india-hours"></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+// ---- HERO SLIDER ----
+(function() {
+  const slider = document.getElementById('hero-slider');
+  const slides = SITE.home.hero.slides;
+  slides.forEach((s, i) => {
+    const div = document.createElement('div');
+    div.className = 'hero-slide' + (i === 0 ? ' active' : '');
+    div.innerHTML = `
+      <div class="hero-slide-bg" style="background-image:url('${s.image}')"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">${s.title}</h1>
+        <a class="hero-btn" href="${s.btnHref}">${s.btnText}</a>
+      </div>`;
+    slider.appendChild(div);
+  });
+
+  // Arrows
+  const prevBtn = document.createElement('button');
+  prevBtn.className = 'slider-arrow prev'; prevBtn.innerHTML = '&#8249;'; prevBtn.setAttribute('aria-label','Prev');
+  prevBtn.onclick = () => changeSlide(-1);
+  const nextBtn = document.createElement('button');
+  nextBtn.className = 'slider-arrow next'; nextBtn.innerHTML = '&#8250;'; nextBtn.setAttribute('aria-label','Next');
+  nextBtn.onclick = () => changeSlide(1);
+  slider.appendChild(prevBtn);
+  slider.appendChild(nextBtn);
+
+  // Dots
+  const dotsWrap = document.createElement('div');
+  dotsWrap.className = 'slider-dots';
+  slides.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.className = 'slider-dot' + (i === 0 ? ' active' : '');
+    dot.setAttribute('aria-label', `Slide ${i+1}`);
+    dot.onclick = () => goToSlide(i);
+    dotsWrap.appendChild(dot);
+  });
+  slider.appendChild(dotsWrap);
+
+  let current = 0;
+  let timer = setInterval(() => changeSlide(1), 5000);
+
+  function changeSlide(dir) {
+    goToSlide((current + dir + slides.length) % slides.length);
+    resetTimer();
+  }
+
+  function goToSlide(n) {
+    const allSlides = slider.querySelectorAll('.hero-slide');
+    const allDots = slider.querySelectorAll('.slider-dot');
+    allSlides[current].classList.remove('active');
+    allDots[current].classList.remove('active');
+    current = n;
+    allSlides[current].classList.add('active');
+    allDots[current].classList.add('active');
+  }
+
+  function resetTimer() {
+    clearInterval(timer);
+    timer = setInterval(() => changeSlide(1), 5000);
+  }
+})();
+
+// ---- ABOUT SECTION ----
+(function() {
+  const d = SITE.home.about;
+  document.getElementById('about-heading').textContent = d.heading;
+  document.getElementById('about-body').textContent = d.body;
+  const btn = document.getElementById('about-btn');
+  btn.textContent = d.btnText; btn.href = d.btnHref;
+})();
+
+// ---- SERVICES DARK ----
+(function() {
+  const d = SITE.home.services;
+  document.getElementById('services-label').textContent = d.label;
+  document.getElementById('services-heading').textContent = d.heading;
+  const btn = document.getElementById('services-btn');
+  btn.href = d.btnHref;
+  const sec = document.getElementById('services-home');
+  if (d.bgImage) sec.style.backgroundImage = `url('${d.bgImage}')`;
+})();
+
+// ---- INDUSTRIES ----
+(function() {
+  document.getElementById('industries-heading').textContent = SITE.home.industries.heading;
+  const track = document.getElementById('ind-track');
+  
+  // Helper to create and append card
+  const addCard = (item) => {
+    const card = document.createElement('a');
+    card.className = 'industry-card';
+    card.href = item.href;
+    card.innerHTML = `
+      <div class="industry-img-wrap">
+        <img src="${item.image}" alt="${item.label}" onerror="this.parentElement.style.background='#c7cce8'" />
+      </div>
+      <div class="industry-label">${item.label}</div>`;
+    track.appendChild(card);
+  };
+  
+  // Render twice for continuous loop
+  SITE.home.industries.items.forEach(addCard);
+  SITE.home.industries.items.forEach(addCard);
+})();
+
+// ---- WHY CHOOSE US ----
+(function() {
+  const d = SITE.home.whyChooseUs;
+  document.getElementById('why-heading').textContent = d.heading;
+  document.getElementById('why-body').textContent = d.body;
+  const img = document.getElementById('why-img');
+  img.src = d.image;
+  const featWrap = document.getElementById('why-features');
+  d.features.forEach((f, i) => {
+    const a = document.createElement('a');
+    a.className = 'why-feature-btn fade-up delay-' + Math.min(i+1, 5);
+    a.href = f.href; a.textContent = f.label;
+    featWrap.appendChild(a);
+  });
+})();
+
+// ---- CTA ----
+(function() {
+  const d = SITE.home.cta;
+  document.getElementById('cta-heading').textContent = d.heading;
+  document.getElementById('cta-email').placeholder = d.placeholder;
+  document.getElementById('cta-btn').textContent = d.btnText;
+  const sec = document.getElementById('cta-home');
+  if (d.bgImage) sec.style.backgroundImage = `url('${d.bgImage}')`;
+})();
+
+function handleCtaSubmit() {
+  const email = document.getElementById('cta-email').value;
+  if (email) { alert('Thank you! We will get back to you soon.'); document.getElementById('cta-email').value = ''; }
+}
+
+// ---- PARTNERS ----
+(function() {
+  document.getElementById('partners-heading').textContent = SITE.home.partners.heading;
+  const grid = document.getElementById('partners-grid');
+  SITE.home.partners.items.forEach(p => {
+    const a = document.createElement('a');
+    a.className = 'partner-logo'; a.href = p.href; a.target = '_blank';
+    const img = document.createElement('img');
+    img.src = p.image; img.alt = p.name;
+    img.style.cssText = 'width:100%;height:100%;object-fit:contain;padding:10px;';
+    img.onerror = function() {
+      this.style.display = 'none';
+      const span = document.createElement('span');
+      span.textContent = p.name;
+      span.style.cssText = 'color:#fff;font-weight:700;font-size:14px;text-align:center;padding:10px;';
+      a.appendChild(span);
+    };
+    a.appendChild(img);
+    grid.appendChild(a);
+  });
+})();
+
+// ---- CONTACT ----
+(function() {
+  document.getElementById('contact-heading').textContent = SITE.home.contact.heading;
+  document.getElementById('contact-body').textContent = SITE.home.contact.body;
+  const usa = SITE.addresses.usa;
+  document.getElementById('addr-usa-label').textContent = usa.label;
+  document.getElementById('addr-usa-street').textContent = usa.street;
+  document.getElementById('addr-usa-phone').textContent = usa.phone;
+  document.getElementById('addr-usa-email').textContent = usa.email;
+  document.getElementById('addr-usa-hours').textContent = usa.hours;
+  const india = SITE.addresses.india;
+  document.getElementById('addr-india-label').textContent = india.label;
+  document.getElementById('addr-india-street').textContent = india.street;
+  document.getElementById('addr-india-phone').textContent = india.phone;
+  document.getElementById('addr-india-email').textContent = india.email;
+  document.getElementById('addr-india-hours').textContent = india.hours;
+})();
+
+function handleContactSubmit(e) {
+  e.preventDefault();
+  alert('Thank you for contacting us! We will reach out soon.');
+  e.target.reset();
+}
+</script>
+</body>
+</html>

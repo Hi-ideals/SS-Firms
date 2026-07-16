@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us – SS Firms</title>
+  <meta name="description" content="Contact SS Firms for expert IT consulting services. Offices in USA and India. Reach us at contact@ssfirms.com or +16893086349." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+</head>
+<body class="page-body">
+
+<script src="content.js"></script>
+<script src="components.js"></script>
+
+<!-- ============================================================
+     PAGE BANNER
+     ============================================================ -->
+<section class="relative bg-cover bg-center py-20 md:py-32 flex items-center justify-center min-h-[240px] md:min-h-[360px]" style="background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('images/Home/image-55.png');">
+  <div class="container mx-auto px-6 text-center relative z-10">
+    <h1 class="text-4xl md:text-6xl font-bold text-white font-serif tracking-wide">Contact Us</h1>
+  </div>
+</section>
+
+<!-- ============================================================
+     ADDRESS CARDS SECTION
+     ============================================================ -->
+<section class="py-16 bg-white relative -mt-16 z-20">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Contact Card 1 -->
+      <div class="bg-white p-6 md:p-8 rounded-3xl shadow-lg border border-gray-100 flex flex-col items-center text-center transition duration-300 hover:shadow-xl">
+        <div class="w-16 h-16 bg-red-500 rounded-2xl flex items-center justify-center text-white text-2xl shadow-lg shadow-red-500/30 mb-4">
+          <i class="fas fa-phone-alt"></i>
+        </div>
+        <h3 class="text-[#1a0463] text-xl font-bold font-serif mb-4 mt-2">Contact Us</h3>
+        <p class="text-gray-600 font-serif text-base">+16893086349</p>
+      </div>
+
+      <!-- Contact Card 2 -->
+      <div class="bg-white p-6 md:p-8 rounded-3xl shadow-lg border border-gray-100 flex flex-col items-center text-center transition duration-300 hover:shadow-xl">
+        <div class="w-16 h-16 bg-blue-500 rounded-2xl flex items-center justify-center text-white text-2xl shadow-lg shadow-blue-500/30 mb-4">
+          <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <h3 class="text-[#1a0463] text-xl font-bold font-serif mb-4 mt-2">Address</h3>
+        <p class="text-gray-600 font-serif text-sm leading-relaxed max-w-xs">
+          141 Hardenburg Ln, East Brunswick, New Jersey 08816 USA
+        </p>
+      </div>
+
+      <!-- Contact Card 3 -->
+      <div class="bg-white p-6 md:p-8 rounded-3xl shadow-lg border border-gray-100 flex flex-col items-center text-center transition duration-300 hover:shadow-xl">
+        <div class="w-16 h-16 bg-emerald-500 rounded-2xl flex items-center justify-center text-white text-2xl shadow-lg shadow-emerald-500/30 mb-4">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <h3 class="text-[#1a0463] text-xl font-bold font-serif mb-4 mt-2">Email Id</h3>
+        <p class="text-gray-600 font-serif text-base">contact@ssfirms.com</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT FORM & MAP SECTION
+     ============================================================ -->
+<section class="py-20 bg-[#12092b]">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex flex-col lg:flex-row gap-12">
+      <!-- Left side: Contact Form -->
+      <div class="w-full lg:w-3/5 text-white">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 font-serif text-white">Contact Us</h2>
+        <p class="text-gray-300 text-sm leading-relaxed mb-8 font-serif">
+          Reach out to us for expert IT consulting services; we're here to help you navigate the ever-evolving world of technology and ensure your business success
+        </p>
+
+        <form class="space-y-4" onsubmit="handlePageContact(event)">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input class="w-full p-4 rounded-md bg-white text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-400" type="text" placeholder="Name" id="ctf-name" required />
+            <input class="w-full p-4 rounded-md bg-white text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-400" type="tel" placeholder="Phone Number" id="ctf-phone" />
+          </div>
+          <input class="w-full p-4 rounded-md bg-white text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-400" type="email" placeholder="Email" id="ctf-email" required />
+          <textarea class="w-full p-4 rounded-md bg-white text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-400" placeholder="Message" id="ctf-msg" rows="5" required></textarea>
+          <button type="submit" class="w-full py-4 bg-[#7c3aed] text-white font-bold rounded-md hover:bg-[#6d28d9] transition duration-300">Submit</button>
+        </form>
+      </div>
+
+      <!-- Right side: Office Info Cards -->
+      <div class="w-full lg:w-2/5 flex flex-col gap-6">
+        <!-- USA Office -->
+        <div class="bg-[#1c0c4d] p-8 rounded-2xl border border-purple-900/30 text-white">
+          <h3 class="text-[#a78bfa] text-xl font-bold mb-6 font-serif uppercase tracking-wide">USA</h3>
+          <div class="space-y-4 text-sm font-serif">
+            <div class="flex items-start gap-4">
+              <i class="fas fa-map-marker-alt text-gray-300 mt-1"></i>
+              <span>141 Hardenburg Ln, East Brunswick New Jersey 08816 USA</span>
+            </div>
+            <div class="flex items-center gap-4">
+              <i class="fas fa-phone-alt text-gray-300"></i>
+              <span>+16893086349</span>
+            </div>
+            <div class="flex items-center gap-4">
+              <i class="fas fa-envelope text-gray-300"></i>
+              <span>contact@ssfirms.com</span>
+            </div>
+            <div class="flex items-center gap-4">
+              <i class="far fa-clock text-gray-300"></i>
+              <span>9 AM EST to 6:00 PM EST</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- India Office -->
+        <div class="bg-[#1c0c4d] p-8 rounded-2xl border border-purple-900/30 text-white">
+          <h3 class="text-[#a78bfa] text-xl font-bold mb-6 font-serif uppercase tracking-wide">INDIA</h3>
+          <div class="space-y-4 text-sm font-serif">
+            <div class="flex items-start gap-4">
+              <i class="fas fa-map-marker-alt text-gray-300 mt-1"></i>
+              <span>SS ARCADE, CMC 8/10/349 Plot No 45, Opposite Bus Depot Gate 2, Devi Colony, Bidar, Karnataka – 585401</span>
+            </div>
+            <div class="flex items-center gap-4">
+              <i class="fas fa-phone-alt text-gray-300"></i>
+              <span>+16893086349</span>
+            </div>
+            <div class="flex items-center gap-4">
+              <i class="fas fa-envelope text-gray-300"></i>
+              <span>contact@ssfirms.com</span>
+            </div>
+            <div class="flex items-center gap-4">
+              <i class="far fa-clock text-gray-300"></i>
+              <span>9 AM IST to 6:00 PM IST</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+function handlePageContact(e) {
+  e.preventDefault();
+  const name = document.getElementById('ctf-name').value;
+  const phone = document.getElementById('ctf-phone').value || 'Not provided';
+  const email = document.getElementById('ctf-email').value;
+  const msg = document.getElementById('ctf-msg').value;
+
+  const subject = encodeURIComponent("Contact Form Submission");
+  const body = encodeURIComponent(
+    `Name: ${name}\n` +
+    `Phone: ${phone}\n` +
+    `Email: ${email}\n\n` +
+    `Message:\n${msg}`
+  );
+
+  window.location.href = `mailto:contact@ssfirms.com?subject=${subject}&body=${body}`;
+  
+  alert('Preparing your email client to send the message to contact@ssfirms.com...');
+  e.target.reset();
+}
+</script>
+</body>
+</html>
