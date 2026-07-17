@@ -9,6 +9,21 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="images/logo.png" />
+  <style>
+    #testimonials-track {
+      display: flex;
+      gap: 24px;
+      width: max-content;
+      animation: marqueeTicker 25s linear infinite;
+    }
+    #testimonials-track:hover {
+      animation-play-state: paused;
+    }
+    @keyframes marqueeTicker {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(calc(-50% - 12px)); }
+    }
+  </style>
 </head>
 <body class="page-body">
 
@@ -110,55 +125,109 @@
         </p>
       </div>
 
-      <!-- Right Column: Cards container -->
-      <div class="lg:col-span-2 flex gap-6 overflow-x-auto pb-4 scrollbar-hide">
-        <!-- Card 1: Amelia Mia -->
-        <div class="flex-shrink-0 w-80 bg-white border border-gray-100 rounded-3xl p-6 md:p-8 shadow-sm flex flex-col justify-between">
-          <div>
-            <div class="text-[#f1c40f] text-lg mb-4">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p class="text-gray-600 text-sm leading-relaxed mb-6 font-serif">
-              Behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarks
-            </p>
-          </div>
-          <div class="flex items-center gap-4 border-t border-gray-100 pt-4">
-            <img class="w-12 h-12 rounded-full object-cover bg-gray-200" src="images/About us/Team_img-4-2-1-150x150.jpeg" alt="Amelia Mia" />
+      <!-- Right Column: Viewport container -->
+      <div class="lg:col-span-2 overflow-hidden relative py-4">
+        <!-- Track container (moves horizontally) -->
+        <div id="testimonials-track">
+          <!-- Card 1: Amelia Mia -->
+          <div class="flex-shrink-0 w-80 bg-white border border-gray-100 rounded-3xl p-6 md:p-8 shadow-sm flex flex-col justify-between">
             <div>
-              <h4 class="font-bold text-gray-800 text-sm font-serif">Amelia Mia</h4>
-              <span class="text-xs text-gray-400 block mt-0.5">WordPress Dev.</span>
+              <div class="text-[#f1c40f] text-lg mb-4">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="text-gray-600 text-sm leading-relaxed mb-6 font-serif">
+                Behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarks
+              </p>
+            </div>
+            <div class="flex items-center gap-4 border-t border-gray-100 pt-4">
+              <img class="w-12 h-12 rounded-full object-cover bg-gray-200" src="images/About us/Team_img-4-2-1-150x150.jpeg" alt="Amelia Mia" />
+              <div>
+                <h4 class="font-bold text-gray-800 text-sm font-serif">Amelia Mia</h4>
+                <span class="text-xs text-gray-400 block mt-0.5">WordPress Dev.</span>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Card 2: Charlie Cooper -->
-        <div class="flex-shrink-0 w-80 bg-white border border-gray-100 rounded-3xl p-6 md:p-8 shadow-sm flex flex-col justify-between">
-          <div>
-            <div class="text-[#f1c40f] text-lg mb-4">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p class="text-gray-600 text-sm leading-relaxed mb-6 font-serif">
-              Behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarks
-            </p>
-          </div>
-          <div class="flex items-center gap-4 border-t border-gray-100 pt-4">
-            <img class="w-12 h-12 rounded-full object-cover bg-gray-200" src="images/About us/Lovely-Customer_img-3-1.jpeg" alt="Charlie Cooper" />
+          <!-- Card 2: Charlie Cooper -->
+          <div class="flex-shrink-0 w-80 bg-white border border-gray-100 rounded-3xl p-6 md:p-8 shadow-sm flex flex-col justify-between">
             <div>
-              <h4 class="font-bold text-gray-800 text-sm font-serif">Charlie Cooper</h4>
-              <span class="text-xs text-gray-400 block mt-0.5">WordPress Dev.</span>
+              <div class="text-[#f1c40f] text-lg mb-4">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="text-gray-600 text-sm leading-relaxed mb-6 font-serif">
+                Behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarks
+              </p>
+            </div>
+            <div class="flex items-center gap-4 border-t border-gray-100 pt-4">
+              <img class="w-12 h-12 rounded-full object-cover bg-gray-200" src="images/About us/Lovely-Customer_img-3-1.jpeg" alt="Charlie Cooper" />
+              <div>
+                <h4 class="font-bold text-gray-800 text-sm font-serif">Charlie Cooper</h4>
+                <span class="text-xs text-gray-400 block mt-0.5">WordPress Dev.</span>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Card 3: Elizabeth Sofia -->
-        <div class="flex-shrink-0 w-80 bg-white border border-gray-100 rounded-3xl p-6 md:p-8 shadow-sm flex flex-col justify-between">
-          <div>
-            <div class="text-[#f1c40f] text-lg mb-4">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p class="text-gray-600 text-sm leading-relaxed mb-6 font-serif">
-              Behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarks
-            </p>
-          </div>
-          <div class="flex items-center gap-4 border-t border-gray-100 pt-4">
-            <img class="w-12 h-12 rounded-full object-cover bg-gray-200" src="images/About us/Team_img-2-2-1-150x150.jpeg" alt="Elizabeth Sofia" />
+          <!-- Card 3: Elizabeth Sofia -->
+          <div class="flex-shrink-0 w-80 bg-white border border-gray-100 rounded-3xl p-6 md:p-8 shadow-sm flex flex-col justify-between">
             <div>
-              <h4 class="font-bold text-gray-800 text-sm font-serif">Elizabeth Sofia</h4>
-              <span class="text-xs text-gray-400 block mt-0.5">WordPress Dev.</span>
+              <div class="text-[#f1c40f] text-lg mb-4">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="text-gray-600 text-sm leading-relaxed mb-6 font-serif">
+                Behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarks
+              </p>
+            </div>
+            <div class="flex items-center gap-4 border-t border-gray-100 pt-4">
+              <img class="w-12 h-12 rounded-full object-cover bg-gray-200" src="images/About us/Team_img-2-2-1-150x150.jpeg" alt="Elizabeth Sofia" />
+              <div>
+                <h4 class="font-bold text-gray-800 text-sm font-serif">Elizabeth Sofia</h4>
+                <span class="text-xs text-gray-400 block mt-0.5">WordPress Dev.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Duplicated Card 1: Amelia Mia -->
+          <div class="flex-shrink-0 w-80 bg-white border border-gray-100 rounded-3xl p-6 md:p-8 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="text-[#f1c40f] text-lg mb-4">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="text-gray-600 text-sm leading-relaxed mb-6 font-serif">
+                Behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarks
+              </p>
+            </div>
+            <div class="flex items-center gap-4 border-t border-gray-100 pt-4">
+              <img class="w-12 h-12 rounded-full object-cover bg-gray-200" src="images/About us/Team_img-4-2-1-150x150.jpeg" alt="Amelia Mia" />
+              <div>
+                <h4 class="font-bold text-gray-800 text-sm font-serif">Amelia Mia</h4>
+                <span class="text-xs text-gray-400 block mt-0.5">WordPress Dev.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Duplicated Card 2: Charlie Cooper -->
+          <div class="flex-shrink-0 w-80 bg-white border border-gray-100 rounded-3xl p-6 md:p-8 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="text-[#f1c40f] text-lg mb-4">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="text-gray-600 text-sm leading-relaxed mb-6 font-serif">
+                Behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarks
+              </p>
+            </div>
+            <div class="flex items-center gap-4 border-t border-gray-100 pt-4">
+              <img class="w-12 h-12 rounded-full object-cover bg-gray-200" src="images/About us/Lovely-Customer_img-3-1.jpeg" alt="Charlie Cooper" />
+              <div>
+                <h4 class="font-bold text-gray-800 text-sm font-serif">Charlie Cooper</h4>
+                <span class="text-xs text-gray-400 block mt-0.5">WordPress Dev.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Duplicated Card 3: Elizabeth Sofia -->
+          <div class="flex-shrink-0 w-80 bg-white border border-gray-100 rounded-3xl p-6 md:p-8 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="text-[#f1c40f] text-lg mb-4">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="text-gray-600 text-sm leading-relaxed mb-6 font-serif">
+                Behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarks
+              </p>
+            </div>
+            <div class="flex items-center gap-4 border-t border-gray-100 pt-4">
+              <img class="w-12 h-12 rounded-full object-cover bg-gray-200" src="images/About us/Team_img-2-2-1-150x150.jpeg" alt="Elizabeth Sofia" />
+              <div>
+                <h4 class="font-bold text-gray-800 text-sm font-serif">Elizabeth Sofia</h4>
+                <span class="text-xs text-gray-400 block mt-0.5">WordPress Dev.</span>
+              </div>
             </div>
           </div>
         </div>
