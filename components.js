@@ -134,7 +134,7 @@ function buildFooter() {
         <!-- Footer Bottom -->
         <div class="footer-bottom">
           <span>${SITE.footer.copyright}</span>
-          <span>Designed by <a href="${SITE.footer.designedByLink}" target="_blank">HiIdeals</a></span>
+          <span>Designed by <a href="${SITE.footer.designedByLink}" target="_blank">Hi Ideals</a></span>
         </div>
       </div>
     </footer>`;

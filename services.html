@@ -18,14 +18,14 @@
 <!-- ============================================================
      PAGE BANNER
      ============================================================ -->
-<section class="bg-white border-b border-gray-100">
-  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+<section class="bg-white border-b border-gray-100 overflow-hidden">
+  <div class="w-full flex flex-col md:flex-row items-center justify-between" style="padding-left: max(1.5rem, calc((100vw - 1280px) / 2 + 1.5rem)); padding-right: 0;">
     <div class="w-full md:w-1/2 pt-12 pb-6 md:py-24 text-left">
       <span class="text-xs uppercase tracking-widest text-[#e0194e] font-extrabold block mb-3">SS Firms</span>
       <h1 class="text-5xl md:text-6xl font-extrabold text-[#1a0463] font-serif leading-tight">Our Services</h1>
     </div>
     <div class="w-full md:w-1/2 flex justify-center md:justify-end pb-8 md:pb-0">
-      <img src="images/banner-right.png" alt="Services Illustration" class="w-full max-w-[400px] md:w-auto h-auto md:h-[450px] object-contain" />
+      <img src="images/header.png" alt="Services Illustration" class="w-full max-w-[400px] md:max-w-none md:w-auto h-auto md:h-[450px] object-contain" />
     </div>
   </div>
 </section>
@@ -44,35 +44,68 @@
 <!-- ============================================================
      PROMO SECTION
      ============================================================ -->
-
+<section class="py-16 md:py-24 bg-white overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative">
+    <!-- Decorative background blob -->
+    <div class="absolute left-0 top-1/2 -translate-y-1/2 w-72 h-72 bg-blue-100/40 rounded-full blur-3xl pointer-events-none"></div>
+    
+    <!-- Left: Text and Video Play Button -->
+    <div class="relative z-10 space-y-6">
+      <span class="text-sm font-semibold text-gray-400 uppercase tracking-widest block font-serif" id="promo-left-text">Enjoy unlimited management solution</span>
+      <h2 class="text-3xl md:text-5xl font-extrabold text-[#1a0463] font-serif leading-tight" id="promo-right-label">Get Tips & Tricks On How To Detailed Your</h2>
+      
+      <!-- Video Play Button (Unclickable) -->
+      <div class="inline-flex items-center gap-4 pointer-events-none select-none" style="margin-top: 2rem;">
+        <div class="w-14 h-14 rounded-full bg-[#3b0da8] flex items-center justify-center text-white shadow-lg shadow-purple-500/20">
+          <i class="fas fa-play ml-1"></i>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Right: Image -->
+    <div class="flex justify-center md:justify-end relative z-10">
+      <img src="images/Services/left_image.png" alt="Promo Illustration" class="w-full max-w-lg h-auto object-contain" />
+    </div>
+  </div>
+</section>
 
 <script>
 // Services Grid
 (function(){
   const grid = document.getElementById('services-grid');
   const icons = {
-    engineering: 'fa-laptop-code',
-    ai: 'fa-brain',
-    cloud: 'fa-cloud',
-    sap: 'fa-cogs',
-    iot: 'fa-microchip',
-    energy: 'fa-bolt',
-    staffing: 'fa-users'
+    engineering: 'eng-icon-150x150.png',
+    ai: 'AI-icon-150x150.png',
+    cloud: 'cloud-icon-150x150.png',
+    sap: 'sap-icon-150x150.png',
+    iot: 'iot-reference-150x150.png',
+    energy: 'energy2-150x150.png',
+    staffing: 'it-staffing-150x150.png'
   };
   SITE.services.items.forEach((s, i) => {
     const div = document.createElement('div');
     div.className = 'service-item fade-up delay-' + Math.min(i+1, 5);
     div.onclick = () => location.href = s.href;
     div.innerHTML = `
-      <div class="service-icon-placeholder">
-        <i class="fas ${icons[s.id] || 'fa-star'}"></i>
-      </div>
+      <img src="images/Services/${icons[s.id]}" class="service-icon" alt="${s.label} Icon" />
       <div class="service-item-info">
         <div class="service-item-title">${s.label}</div>
         <span class="service-item-link">Read more</span>
       </div>`;
     grid.appendChild(div);
   });
+
+  // Add 8th item (cartoon girl image)
+  const girlDiv = document.createElement('div');
+  girlDiv.className = 'service-item fade-up delay-5';
+  girlDiv.style.cursor = 'default';
+  girlDiv.style.background = 'transparent';
+  girlDiv.style.pointerEvents = 'none'; // disables hover/pointer
+  girlDiv.innerHTML = `
+    <div class="w-full h-full flex justify-center items-center">
+      <img src="images/Services/techimg.jpg" alt="Developer Illustration" class="w-full h-auto max-h-[150px] object-contain" />
+    </div>`;
+  grid.appendChild(girlDiv);
 })();
 
 // Promo

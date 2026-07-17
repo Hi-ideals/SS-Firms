@@ -290,7 +290,7 @@ const SITE = {
     ],
     promo: {
       leftText: "Enjoy unlimited management solution",
-      rightLabel: "Get tips & tricks"
+      rightLabel: "Get Tips & Tricks On How To Detailed Your"
     }
   },
 
