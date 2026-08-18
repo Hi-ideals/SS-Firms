@@ -129,9 +129,7 @@ function buildFooter() {
               <i class="fas fa-envelope"></i>
               <span>${SITE.subpageAddress.email}</span>
             </div>
-          </div>
-
-           <div>
+            
             <div class="footer-contact-item">
               <i class="fas fa-map-marker-alt"></i>
               <span>${SITE.subpageAddress.usa1}</span>
@@ -144,7 +142,9 @@ function buildFooter() {
               <i class="fas fa-envelope"></i>
               <span>${SITE.subpageAddress.email1}</span>
             </div>
+            
           </div>
+
         </div>
         <!-- Footer Bottom -->
         <div class="footer-bottom">
