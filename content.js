@@ -30,10 +30,12 @@ const SITE = {
 
   // Sub-pages use different address
   subpageAddress: {
+    label: "USA",
     usa: "141 Hardenburg Ln, East Brunswick New Jersey 08816 USA",
     phone: "+16893086349",
     email: "contact@ssfirms.com",
-
+    
+    label: "INDIA",
     usa1: "SS ARCADE, CMC 8/10/349 Plot No 45, Opposite Bus Depot Gate 2, Devi Colony, Bidar, Karnataka – 585401",
     phone1: "+16893086349",
     email1: "contact@ssfirms.com"
