@@ -30,9 +30,13 @@ const SITE = {
 
   // Sub-pages use different address
   subpageAddress: {
-    usa: "SS ARCADE, CMC 8/10/349 Plot No 45, Opposite Bus Depot Gate 2, Devi Colony, Bidar, Karnataka – 585401222",
+    usa: "141 Hardenburg Ln, East Brunswick New Jersey 08816 USA",
     phone: "+16893086349",
-    email: "info@ssfirms.com"
+    email: "contact@ssfirms.com",
+
+    usa: "SS ARCADE, CMC 8/10/349 Plot No 45, Opposite Bus Depot Gate 2, Devi Colony, Bidar, Karnataka – 585401",
+    phone: "+16893086349",
+    email: "contact@ssfirms.com"
   },
 
   social: {
