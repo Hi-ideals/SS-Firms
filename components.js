@@ -130,6 +130,7 @@ function buildFooter() {
               <i class="fas fa-envelope"></i>
               <span>${SITE.subpageAddress.email}</span>
             </div>
+            <h4 class="footer-col-title">INDIA</h4>
             <div class="footer-contact-item">
               <i class="fas fa-map-marker-alt"></i>
               <span>${SITE.subpageAddress.usa1}</span>
