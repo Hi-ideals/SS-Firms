@@ -120,12 +120,8 @@ function buildFooter() {
             <div class="footer-contact-item">
               <i class="fas fa-map-marker-alt"></i>
               <span>${SITE.subpageAddress.usa}</span>
-            </div>
-            <div class="footer-contact-item">
               <i class="fas fa-phone-alt"></i>
               <span>${SITE.subpageAddress.phone}</span>
-            </div>
-            <div class="footer-contact-item">
               <i class="fas fa-envelope"></i>
               <span>${SITE.subpageAddress.email}</span>
               <i class="fas fa-map-marker-alt"></i>
