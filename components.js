@@ -133,12 +133,6 @@ function buildFooter() {
               <i class="fas fa-envelope"></i>
               <span>${SITE.subpageAddress.email1}</span>
             </div>
-            
-           
-              
-            
-          </div>
-
         </div>
         <!-- Footer Bottom -->
         <div class="footer-bottom">
