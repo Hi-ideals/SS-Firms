@@ -117,6 +117,7 @@ function buildFooter() {
           </div>
           <!-- Address -->
           <div>
+          <h4 class="footer-col-title">USA</h4>
             <div class="footer-contact-item">
               <i class="fas fa-map-marker-alt"></i>
               <span>${SITE.subpageAddress.usa}</span>
