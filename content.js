@@ -69,6 +69,15 @@ const SITE = {
 
   footer: {
     about: "We can help you build your business through automation & IT Services. Our Services combined with our strategic business and innovation goal with immense experience with industry needs.",
+    addresses: [
+      {
+        label: "USA",
+        street: "141 Hardenburg Lane, East Brunswick, NJ 08816 USA",
+        phone: "+16893086349",
+        email: "info@ssfirms.com",
+        hours: "9 AM EST to 6:00 PM EST"
+      }
+    ],
     quickLinks: [
       { label: "About Us",   href: "about-us.html" },
       { label: "Services",   href: "services.html" },
