@@ -124,6 +124,8 @@ function buildFooter() {
               <span>${SITE.subpageAddress.phone}</span>
               <i class="fas fa-envelope"></i>
               <span>${SITE.subpageAddress.email}</span>
+            </div>
+             <div class="footer-contact-item">
               <i class="fas fa-map-marker-alt"></i>
               <span>${SITE.subpageAddress.usa1}</span>
               <i class="fas fa-phone-alt"></i>
