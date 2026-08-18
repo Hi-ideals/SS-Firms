@@ -30,7 +30,7 @@ const SITE = {
 
   // Sub-pages use different address
   subpageAddress: {
-    usa: "SS ARCADE, CMC 8/10/349 Plot No 45, Opposite Bus Depot Gate 2, Devi Colony, Bidar, Karnataka – 585401",
+    usa: "SS ARCADE, CMC 8/10/349 Plot No 45, Opposite Bus Depot Gate 2, Devi Colony, Bidar, Karnataka – 585401222",
     phone: "+16893086349",
     email: "info@ssfirms.com"
   },
